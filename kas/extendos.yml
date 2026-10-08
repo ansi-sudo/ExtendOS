@@ -1,0 +1,22 @@
+header:
+  version: 18
+  includes:
+    - repo: yocto-superbird
+      file: kas/superbird.yml
+
+distro: extendos
+
+target:
+  - extendos-dev-image
+
+repos:
+  yocto-superbird:
+    url: https://github.com/JoeyEamigh/yocto-superbird.git
+    branch: main
+    commit: 5969a5f1c63dfc4ab2f52191db6d0ebbc22a672d
+    path: sources/yocto-superbird
+
+  yocto-extendos:
+    path: .
+    layers:
+      meta-extendos:

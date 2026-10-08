@@ -1,0 +1,12 @@
+SUMMARY = "ExtendOS prod image delta OTA (.swu)"
+
+SUPERBIRD_OTA_SW_DESCRIPTION_VARIANT = "delta"
+
+require recipes-core/superbird-bsp-update/superbird-bsp-update.inc
+
+SUPERBIRD_OTA_SOURCE_IMAGE = "extendos-prod-image"
+SUPERBIRD_OTA_SYSTEM_ARTIFACT  = "${SUPERBIRD_OTA_SOURCE_LINKNAME}.ext4.zck.zckheader"
+SUPERBIRD_OTA_SYSTEM_CPIO_NAME = "system.img.zck.zckheader"
+
+SUPERBIRD_OTA_BOOT_ARTIFACT  = "boot.vfat.zck.zckheader"
+SUPERBIRD_OTA_BOOT_CPIO_NAME = "boot.vfat.zck.zckheader"

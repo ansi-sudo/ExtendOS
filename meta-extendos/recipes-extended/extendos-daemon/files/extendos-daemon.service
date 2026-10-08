@@ -1,0 +1,13 @@
+[Unit]
+Description=ExtendOS example daemon
+Requires=opt-overlay@extendos.service
+After=opt-overlay@extendos.service
+
+[Service]
+Type=simple
+ExecStart=/opt/extendos/daemon/kioskd.current
+Restart=on-failure
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target

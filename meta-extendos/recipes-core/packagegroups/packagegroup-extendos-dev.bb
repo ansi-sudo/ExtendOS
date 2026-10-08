@@ -9,6 +9,7 @@ PACKAGES = "${PN}"
 
 RDEPENDS:${PN} = " \
     libdrm-tests \
+    superbird-fbpaint \
     kmscube \
     \
     bash \

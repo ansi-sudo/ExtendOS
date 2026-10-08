@@ -15,7 +15,4 @@ RDEPENDS:${PN} = " \
     extendosd \
     \
     mesa \
-    blank-cursor \
-    cursor-suppress \
-    superbird-fbpaint \
 "

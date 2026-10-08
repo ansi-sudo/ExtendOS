@@ -7,7 +7,6 @@ SRC_URI = " \
     file://extendosd.service \
 "
 SRCREV = "1d2c9aa1129d71d7a858b50c4d167cf36b6569e8"
-S = "${UNPACKDIR}/git"
 
 inherit cargo systemd
 

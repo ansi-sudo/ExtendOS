@@ -1,0 +1,10 @@
+[Unit]
+Description=ExtendOS app
+
+[Service]
+Type=oneshot
+RemainAfterExit=yes
+ExecStart=/usr/bin/extendosd
+
+[Install]
+WantedBy=multi-user.target

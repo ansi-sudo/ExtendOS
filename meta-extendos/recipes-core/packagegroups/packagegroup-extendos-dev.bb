@@ -8,6 +8,7 @@ inherit packagegroup
 PACKAGES = "${PN}"
 
 RDEPENDS:${PN} = " \
+    extendos-shell \
     libdrm-tests \
     superbird-fbpaint \
     kmscube \

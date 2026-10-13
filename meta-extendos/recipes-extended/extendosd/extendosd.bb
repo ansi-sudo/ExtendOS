@@ -6,9 +6,11 @@ SRC_URI = " \
     git://github.com/ansi-sudo/extendosd.git;protocol=https;branch=main \
     file://extendosd.service \
 "
-SRCREV = "1d2c9aa1129d71d7a858b50c4d167cf36b6569e8"
+SRCREV = "b9bf7d8c3f113c43710c0278bf2c4762c334b0dd"
 
-inherit cargo systemd
+require ${BPN}-crates.inc
+
+inherit cargo cargo-update-recipe-crates systemd
 
 SYSTEMD_SERVICE:${PN} = "extendosd.service"
 SYSTEMD_AUTO_ENABLE = "enable"

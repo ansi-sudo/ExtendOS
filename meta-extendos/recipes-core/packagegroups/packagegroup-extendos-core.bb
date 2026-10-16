@@ -13,6 +13,7 @@ RDEPENDS:${PN} = " \
     extendos-daemon \
     extendos-default-webapp \
     extendosd \
+    extendos-usb-hid \
     \
     mesa \
 "

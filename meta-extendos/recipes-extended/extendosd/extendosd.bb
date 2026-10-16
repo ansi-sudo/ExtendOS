@@ -6,7 +6,7 @@ SRC_URI = " \
     git://github.com/ansi-sudo/extendosd.git;protocol=https;branch=main \
     file://extendosd.service \
 "
-SRCREV = "b9bf7d8c3f113c43710c0278bf2c4762c334b0dd"
+SRCREV = "e2824f5b99481f9b5167299ab250f5815dc78e85"
 
 require ${BPN}-crates.inc
 
